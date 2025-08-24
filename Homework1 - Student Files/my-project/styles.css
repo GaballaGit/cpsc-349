@@ -1,0 +1,103 @@
+/* General Guidelines:
+   - Use the provided purple color (#6f5eff) where applicable.
+   - The default font family for HW1 should be Arial, sans-serif.
+*/
+
+/* Typography: */
+/* 
+"House Design" title 
+    font-size: 1.5rem;
+    font-weight: bold;
+"House Styling" title 
+    font-size: 20px;
+Footer section headings: 'Store Info', 'About', 'Account', 'Policy'
+    font-size: 14px;
+Footer content 
+    font-size: 14px;
+For all other text, if not specified above, any approximate font size is acceptable. 
+*/
+
+/* TO-DO */
+
+* {
+  font-family: 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+body {
+	/* note to self: body applies margin automatically */
+	margin: 0px;
+}
+
+/* -- Top Bar -- */
+
+#navbar {
+	z-index: 99;
+	width: 100%;
+	height: 140px;
+	background-color: #F4F4F4;
+	position: fixed;
+	border-bottom-style: solid;
+	border-width: 2px;
+	border-color: #DCDCDC;
+}
+
+#navbar .tophalf h1 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+#navbar .bottomhalf {
+	display: flex;
+	padding-bottom: 20px;
+	justify-content: center;
+	font-size: 16px;
+	text-align: center;
+}
+
+#navbar .bottomhalf .container {
+	color: grey;
+	padding: 10 90px;
+}
+
+/* -- Background -- */
+#background img {
+	display: block;
+	margin: 0 auto;
+	height: 175%;
+	width: auto;
+}
+
+/* -- Forground -- */
+
+.forground {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	background: lightgrey;
+	height: 1200px;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.forground .window {
+	text-align: center;
+	background-color: white;
+	border-color: #CDCDCD;
+	border-width: 2px;
+	width: 45%;
+	height: 45%;
+}
+
+.forground .window img{
+	height: 95%;
+	width: auto;
+}
+
+
+.forground .window button{
+	justify-content: center;
+	height: 95%;
+	width: auto;
+	color: #6f5eff;
+}
