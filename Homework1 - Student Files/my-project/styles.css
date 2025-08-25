@@ -24,6 +24,7 @@ For all other text, if not specified above, any approximate font size is accepta
 }
 
 body {
+	font-size: 14px;
 	/* note to self: body applies margin automatically */
 	margin: 0px;
 }
@@ -63,7 +64,7 @@ body {
 
 /* -- Background -- */
 #background {
-	z-index: 0;
+	z-index: -1;
 	display: block;
 	margin: 0 auto;
 	width: 90%;
@@ -79,8 +80,9 @@ body {
 	height: auto;
 }
 
-#housestyles{
+.housestyles{
 	width: 90%;
+	font-size: 20px;
 	padding: 1.5rem min(10rem, 8%);
 	position: relative;
 	z-index: 100;
@@ -99,6 +101,7 @@ body {
 	justify-content: center;
 	width: 100%;
 	flex-wrap: wrap;
+	padding-bottom: 3rem;
 	gap: 2rem;
 }
 
@@ -130,14 +133,74 @@ body {
 }
 
 .forground .window button:hover{
-	background-color: rgb(34, 34, 34);
-	border-color: rgb(34, 34, 34);
+	background-color: darkgrey;
+	border-color: darkgrey;
 }
 
 /* -- Footer -- */
 
 #footer {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	position: relative;
-	z-index: 80;
-	background-color: white;
+	z-index: 95;
+	background-color: whitesmoke;
+}
+
+#footer #idkwhattonamethis {
+	padding-bottom: 1rem;
+	justify-content: center;
+	display: flex;
+	gap: min(8rem, 8%);
+}
+
+#footer #idkwhattonamethis #info h3 {
+	padding-bottom: 0.5rem;
+}
+
+
+#footer #idkwhattonamethis #about h3 {
+	padding-bottom: 0.5rem;
+}
+
+#footer #idkwhattonamethis #account h3 {
+	padding-bottom: 0.5rem;
+}
+
+#footer #idkwhattonamethis #policy h3 {
+	padding-bottom: 0.5rem;
+}
+
+
+
+
+#footer #idkwhattonamethis #about p:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#footer #idkwhattonamethis #account p:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#footer #idkwhattonamethis #policy p:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#footer button {
+	width: min(14rem, 10%);
+	position: relative;
+	left: min(14rem, 14%);
+	color: white;
+	border-style: solid;
+	border-color: #6f5eff;
+	border-radius: 1.5rem;
+	background-color: #6f5eff;
+	padding: min(0.5rem, 8%);
+}
+
+#footer button:hover {
+	cursor: pointer;
 }
