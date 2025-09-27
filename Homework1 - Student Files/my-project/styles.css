@@ -43,6 +43,7 @@ body {
 }
 
 #navbar .tophalf h1 {
+	color: black;
 	font-size: 1.5rem;
 	font-weight: bold;
 	text-align: center;
@@ -83,11 +84,12 @@ body {
 .housestyles{
 	width: 90%;
 	font-size: 20px;
-	padding: 1.5rem min(10rem, 8%);
+	padding: 1rem min(11rem, 15%); 
 	position: relative;
 	z-index: 100;
 	background-color: white;
 	color:#6f5eff;
+	/*margin-left: min(4rem, 10%);*/
 }
 
 
@@ -106,7 +108,7 @@ body {
 }
 
 .forground .window {
-	padding: 2rem;
+	padding: 2rem 1rem;
 	text-align: center;
 	background-color: white;
 	border-color: lightgrey;
@@ -129,12 +131,12 @@ body {
 	color: white;
 	border-color: #6f5eff;
 	border-radius: 0.2rem;
-	padding: min(2rem, 2%);
+	padding: min(2rem, 2%) min(3rem, 4%);
 }
 
 .forground .window button:hover{
-	background-color: darkgrey;
-	border-color: darkgrey;
+	background-color: #585454;
+	border-color: #585454;
 }
 
 /* -- Footer -- */
@@ -190,7 +192,7 @@ body {
 }
 
 #footer button {
-	width: min(14rem, 10%);
+	width: min(11rem, 10%);
 	position: relative;
 	left: min(14rem, 14%);
 	color: white;
@@ -198,7 +200,7 @@ body {
 	border-color: #6f5eff;
 	border-radius: 1.5rem;
 	background-color: #6f5eff;
-	padding: min(0.5rem, 8%);
+	padding: min(0.1rem, 7%);
 }
 
 #footer button:hover {
